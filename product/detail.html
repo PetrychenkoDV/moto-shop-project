@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Detail</title>
+
+    <!-- Bootstrap -->
+    <link href="../libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../libs/fontawesome/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://vk.com/js/api/openapi.js?136" type="text/javascript"></script>
+  </head>
+  <body>
+    
+<!-- навигация -->
+    <nav class="navbar navbar-default stickyeah">
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="../index.html">Poland Parts</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Оплата<span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      Цены с доставкой в Украину
+                      <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">запчасти б/у для мотоциклов</a></li>
+                    <li><a href="#">расходники / смазки</a></li>
+                    <li><a href="#">резина для мотоциклов</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">ветровые стекла</a></li>
+                    <li><a href="#">сумки, кофры, пауки</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">услуги растаможивания / проверка интерпол</a></li>
+                  </ul>
+                </li>
+              </ul>
+              
+              <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="поиск">
+                  <select name="" id="" class="form-control nav-form-control">
+                      <option value=""></option>
+                      <option value="">-- искать везде --</option>
+                      <option value="">запчасти б/у для мотоциклов</option>
+                      <option value="">расходники / смазки</option>
+                      <option value="">резина для мотоциклов</option>
+                      <option value="">ветровые стекла</option>
+                      <option value="">сумки, кофры, пауки</option>
+                      <option value="">запчасти б/у для машин</option>
+                      <option value="">дополнительное оборудывание для мотоциклов</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-default">Найти</button>
+              </form>
+              
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <button class="btn btn-success bag-item nav-bag-button" data-toggle="modal" data-target="#myModal">
+                    корзина
+                    </button>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    Отзывы о нас 
+                    <span class="caret"></span></a>
+                    
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://vk.com/topic-23963336_31910324" target="_blank">Вконтакте</a>
+                        </li>
+                        <li>
+                            <a href="https://moto.kiev.ua/forum/details.php?id=1432671751619&opnshow=1" target="_blank">Мото Киев
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://polandparts.com/comments/" target="_blank">Закупка</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="https://vk.com/topic-23963336_31939370" target='_blank'>Мошенники!!!</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+              
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+<!-- основная часть -->
+    <div class="container main-container">
+        <div class="row">
+           
+<!-- сайт бар -->
+            <div class="col-md-2">
+                <div class="row">
+                    <aside>
+                       
+                        <div class="aside-delimiter delimiter">
+                            <div class="bag aside-bag-container">
+                                
+                                <i class="fa fa-shopping-bag fa-2x bag-item" aria-hidden="true"></i>
+                                <p class="bag-item"><span>3</span></p>
+                                    <!-- Button trigger modal -->
+                                <button class="btn btn-success bag-item" data-toggle="modal" data-target="#myModal">
+                                        корзина
+                                </button>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="aside-list-container">
+                            <ul class='list-group aside-list'>
+                               <li class="list-group-item"><a href="">запчасти б/у для мотоциклов</a>
+                                   <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Honda</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Yamaha</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Kawasaky</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Suzuki</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Husquarna</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Triumph</a></li>
+                                   </ul>
+                               </li>
+                               <li class="list-group-item"><a href="">расходники / смазки</a>
+                               <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Rapsol</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Motul</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Castrol</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Elf</a></li>
+                                   </ul></li>
+                               <li class="list-group-item"><a href="">резина для мотоциклов</a>
+                               <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Dunlop</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Pirelli</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Michelin</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Metzeller</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Continental</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">other</a></li>
+                                   </ul></li>
+                               <li class="list-group-item"><a href="">ветровые стекла</a>
+                               <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Loster</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Givi</a></li>
+                                   </ul></li>
+                               <li class="list-group-item"><a href="">сумки, кофры, пауки</a>
+                               <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Givi</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Oxford</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Buse</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Kappa</a></li>
+                                   </ul></li>
+                               <li class="list-group-item"><a href="">дополнительное оборудывание для мотоциклов</a>
+                               <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Електрика</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Крашпеды</a></li>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Клетки</a></li>
+                                   </ul></li>
+                               <li class="list-group-item"><a class="" href="">запчасти б/у для машин</a>
+                               <ul class='list-group aside-subList'>
+                                       <li class="list-group-item"><i class="fa fa-angle-right" aria-hidden="true"></i><a href="">Под заказ</a></li>
+                                   </ul>
+                               </li>
+                           </ul>
+                        </div>
+                        
+                        <div class="aside-social-container">
+                            <div id="vk_groups">
+                            </div>
+                                <script type="text/javascript">
+                                VK.Widgets.Group("vk_groups", {mode: 3, width: "195px"}, 23963336);
+                                </script>
+                            <div class="fb-container">
+                                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ffreeride.kiev.ua%2F%3Fpnref%3Dlhc&tabs=timeline&width=195px&height=150px&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="195px" height="150px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+                            </div>
+                        </div>
+                        
+                        
+                    </aside>
+                </div>
+                
+            </div>
+            
+<!-- корзина -->
+               <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">В вашей корзине:</h4>    
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group bag-list">
+                        <li class="list-group-item">
+                           <div class="text-left">
+                               Двигатель YAMAHA YZF R6 04-05
+                           </div>
+                            <div class="text-right">
+                                22227 грн
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="text-left">
+                               Рама YAMAHA YZF R6 03 
+                           </div>
+                            <div class="text-right">
+                                12000 грн
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="text-left">
+                               Yamaha R6 09 полный комплект
+                           </div>
+                            <div class="text-right">
+                                32999 грн
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                           <div class="text-left">
+                               Итого:
+                           </div>
+                            <div class="text-right">
+                                67226 грн
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-success">Перейти к оплате</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+            
+<!-- мейн часть -->
+            <div class="col-md-10">
+<!-- мейн шапка -->
+                <div class="row">
+                    <div class="col-md-12 delimiter main-delimiter">
+                        <div class="main-header col-md-12">
+                            <h2>ЦЕНЫ С ДОСТАВКОЙ в Украину на Yamaha R6!</h2>
+                        </div>
+                    </div>
+                </div>
+<!--  мейн тело -->
+                
+                <div class="detail-container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h2 class="text-center">Двигатель YAMAHA YZF R6 04-05</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="col-md-6">
+                                <!-- карусель -->
+                                <div class="carousel-container detail-carousel">
+                                    <div class="row">
+                                        <div id="carousel" class="carousel slide" data-ride='carousel'>
+        <!-- индикаторы слайдов -->  
+                                            <ol class="carousel-indicators">
+                                                <li class="active" data-target='#carousel' data-slide='0'></li>
+                                                <li data-target='#carousel' data-slide='1'></li>
+                                                <li data-target='#carousel' data-slide='2'></li>
+                                                <li data-target='#carousel' data-slide='3'></li>
+                                            </ol>
+                <!-- слайды -->
+                                            <div class="carousel-inner text-center">
+                                               
+                                                <div class="item active">
+                                                    <img src="../images/details/r6-1.jpg" alt="poland-parts">
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="../images/details/r6-2.jpg" alt="poland-parts">
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="../images/details/r6-3.jpg" alt="poland-parts">
+                                                </div>
+
+                                                <div class="item">
+                                                    <img src="../images/details/r6-4.jpg" alt="poland-parts">
+                                                </div>
+
+
+        <!-- стрелки слайдов -->
+                                                <a href="#carousel" class="left carousel-control" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a href="#carousel" class="right carousel-control" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="list-group details-list-price">
+                                    <li class="list-group-item">24 570 грн</li>
+                                    <li class="list-group-item">
+                                        от 2 шт. 23 400 грн/шт.
+                                    <br/>
+                                        от 5 шт. 22 100 грн/шт.
+                                    </li>
+                                    <li class="list-group-item">Под заказ, 10 дней</li>
+                                    <li class="list-group-item text-center"><button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">Заказать товар</button></li>
+                                    <li class="list-group-item text-center">
+                                        
+                                        
+                                        
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul class="list-group details-list-contact">
+                                    <li class="list-group-item">Контактная информация:</li>
+                                    <li class="list-group-item"><strong>Телефон:</strong></li>
+                                    <li class="list-group-item">+48 (78) 433-22-95</li>
+                                    <li class="list-group-item">
+                                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
+                                        <i class="fa fa-whatsapp viber fa-3x" aria-hidden="true"></i>
+                                    </li>
+                                    <li class="list-group-item"><strong>Адрес:</strong></li>
+                                    <li class="list-group-item">Польша, Подкарпатское воеводство, Дембица, ул. Транспортовцув, 5</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container footer-container">
+            <div class="row">
+                <div> 
+                    <h5>АККАУНТ</h5>
+                    <a href="">КАБИНЕТ</a>
+                    <a href="">АДРЕСС</a>
+                    <a href="">СКИДКА</a>
+                    <a href="">ПОКУПКИ</a>
+                </div> 
+
+                <div>
+                    <h5>ИНФОРМАЦИЯ</h5>
+                    <a href="">КОНТАКТЫ</a>
+                    <a href="">РЕГИСТРАЦИЯ</a>
+                    <a href="">FAQ</a>
+                </div>
+
+                <div>
+                    <h5>НАШИ ПРЕДЛОЖЕНИЯ</h5>
+                    <a href="">НОВЫЙ ТОВАР</a>
+                    <a href="">ЛУЧШИЙ ТОВАР</a>
+                    <a href="">СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ</a>
+                </div>
+
+                <div>
+                    <h5>МЫ В СЕТЯХ</h5>
+                    <a href="https://vk.com/poland_parts" data-target='__blink'>
+                        <span class="fa-stack fa-lg">
+                          <i class="fa fa-vk" aria-hidden="true"></i>
+                          <i class="fa fa-square-o fa-stack-2x"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.facebook.com/polandparts.in.ua?fref=ts" data-target='__blink'>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-square-o fa-stack-2x"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/stickyeah.js"></script>
+  </body>
+</html>
